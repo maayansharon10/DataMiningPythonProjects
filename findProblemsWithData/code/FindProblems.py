@@ -1,4 +1,3 @@
-# Maayan Sharon 205815566 and Imri Dror 305219040
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
