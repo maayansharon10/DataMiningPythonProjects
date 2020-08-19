@@ -1,5 +1,4 @@
 # -- Ex3_practical part:  --------------------------------------------------
-#   submitted by: Maayan Sharon & Imri Dror
 
 # -- Imports ---------------------------------------------------------------
 from nltk import word_tokenize
