@@ -148,9 +148,8 @@ plt_dic(dict_basic, "basic tokens: ")
 
 # tokenize without stopwords
 stop = set(stopwords.words('english'))
-stop.update(["[","]","(",")",'”', '“',".","'","?",",",";","!"])
-#         explanation: potential insert to stopwords. we ran the code both
-#         with and without it
+# unused: stop.update(["[","]","(",")",'”', '“',"."])
+#         explanation: potential insert to stopwords.
 tokens_no_stop = [i for i in word_tokenize(text.lower()) if i not in stop]
 dict_no_stop = list_to_count_fixed(tokens_no_stop)
 print("number of tokens - no stopwords: " + str(len(dict_no_stop)))
@@ -164,7 +163,7 @@ print("number of tokens - stemm: " + str(len(dict_stemm)))
 plt_dic(dict_stemm, "stemm tokens: ")
 
 # pos tokenize :
-token_pos = nltk.pos_tag(word_tokenize(text))
+token_pos = nltk.pos_tag(tokens)
 print(token_pos)
 # output file for wordcloud making online
 wordcloud_pos(token_pos)
